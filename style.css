@@ -1,0 +1,168 @@
+/****
+Colours:
+#7F7464
+#FFFFFF
+#FFE8C9
+#7F7F7F
+#CCB9A1
+****/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #7F7464;
+    padding: 1rem;
+}
+
+.masthead {
+    background-image: url(img/Cat4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+    color: #FFFFFF;
+    font-family: Verdana, sans-serif;
+}
+.mainnav {
+    font-family: Vollkorn, serif;
+}
+nav ul {
+    list-style: none;
+    padding: 0.5rem 0 0.5rem 0;
+    color: #FFE8C9;
+    background: #7F7F7F;
+}
+
+a:link {
+    color: #FFE8C9;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #FFFFFF;
+}
+
+main {
+    font-family: Vollkorn, serif;
+}
+.primary {
+    background-color: #FFE8C9;
+    margin: 1rem 0 1rem 0 1rem;
+    padding: 1rem;
+}
+.left {
+    float: left;
+    max-width: 350px;
+    max-height: 200px;
+    padding: 0.5rem;
+}
+
+.right {
+    float: right;
+    max-width: 350px;
+    max-height: 200px;
+    padding: 0.5rem;
+}
+.side {
+    background-color: #CCB9A1;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: Lato, sans-serif;
+}
+
+footer {
+    color: #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 35em) {
+
+    nav li {
+        display: block;
+        height: 20px;
+        padding-left: 1rem;
+}
+}
+
+@media screen and (min-width: 35em) and (max-width: 60em) {
+    nav li {
+        display: inline;
+        padding: 1rem;
+    }
+    nav ul {
+        text-align: center;
+    }
+
+    .primary {
+        float: left;
+        margin: 1rem 0 1rem 0;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 2rem;
+        -moz-column-count: 2;
+        -moz-column-gap: 2rem;
+        column-count: 2;
+        column-gap: 2rem;
+        width: 63%;
+    }
+    .side {
+        box-sizing: border-box;
+        width: 37%;
+        float: right;
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+    
+    .right {
+        padding: 0.5rem;
+        max-width: 200px;
+    }
+    
+    .left {
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    footer {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .masthead {
+    }
+    .mainnav {
+        float: left;
+        margin: 1rem 1rem 0 0;
+    }
+    nav ul {
+        padding: 1rem;
+    }
+    body {
+        padding: 2rem;
+    }
+    .primary {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 2rem;
+        -moz-column-count: 2;
+        -moz-column-gap: 2rem;
+        column-count: 2;
+        column-gap: 2rem;
+        width: 52%;
+        float: left;
+        margin: 1rem 0 1rem 0;
+    }
+    
+    .side {
+        float: right;
+        margin: 1rem 0 1rem 0;
+        width: 30%;
+        font-size: 14px;
+    }
+    .right {
+        max-width: 200px;
+    }
+    footer {
+        clear: both;
+        padding-bottom: 1rem;
+    }
+}
