@@ -128,8 +128,6 @@ footer {
 }
 
 @media screen and (min-width: 60em) {
-    .masthead {
-    }
     .mainnav {
         float: left;
         margin: 1rem 1rem 0 0;
@@ -165,4 +163,43 @@ footer {
         clear: both;
         padding-bottom: 1rem;
     }
+}
+
+@media screen and (min-width: 64em) {
+    .mainnav {
+        float: left;
+        margin: 1rem 1rem 0 0;
+    }
+    nav ul {
+        padding: 1rem;
+    }
+    body {
+        padding: 2rem;
+    }
+    .primary {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 2rem;
+        -moz-column-count: 2;
+        -moz-column-gap: 2rem;
+        column-count: 2;
+        column-gap: 2rem;
+        width: 56%;
+        float: left;
+        margin: 1rem 0 1rem 0;
+    }
+    
+    .side {
+        float: right;
+        margin: 1rem 0 1rem 1rem;
+        width: 26%;
+        font-size: 14px;
+    }
+    .right {
+        max-width: 200px;
+    }
+    footer {
+        clear: both;
+        padding-bottom: 1rem;
+    }
+}
 }
